@@ -9,8 +9,6 @@
   ],
   "require": {
     "php" : ">=8",
-    "ext-mbstring": "*",
-    "ext-yaml": "*",
     "laravel/framework": ">=9"
   },
   "autoload": {

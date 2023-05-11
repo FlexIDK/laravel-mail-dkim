@@ -1,0 +1,23 @@
+{
+  "name": "one23/laravel-mail-dkim",
+  "type": "library",
+  "homepage": "https://github.com/FlexIDK/laravel-mail-dkim",
+  "description": "Support DKIM in Laravel Mail",
+  "license": "MIT",
+  "version": "0.1",
+  "authors": [
+  ],
+  "require": {
+    "php" : ">=8",
+    "ext-mbstring": "*",
+    "ext-yaml": "*",
+    "laravel/framework": ">=9"
+  },
+  "autoload": {
+    "psr-4": {
+      "One23\\LaravelMailDkim\\": "src"
+    }
+  },
+  "extra": {
+  }
+}

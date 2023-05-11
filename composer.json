@@ -4,12 +4,12 @@
   "homepage": "https://github.com/FlexIDK/laravel-mail-dkim",
   "description": "Support DKIM in Laravel Mail",
   "license": "MIT",
-  "version": "0.1",
+  "version": "v0.1.1",
   "authors": [
   ],
   "require": {
     "php" : ">=8",
-    "laravel/framework": ">=9"
+    "laravel/framework": ">=v9"
   },
   "autoload": {
     "psr-4": {

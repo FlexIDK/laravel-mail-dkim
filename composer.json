@@ -4,12 +4,21 @@
   "homepage": "https://github.com/FlexIDK/laravel-mail-dkim",
   "description": "Support DKIM in Laravel Mail",
   "license": "MIT",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "authors": [
   ],
   "require": {
-    "php" : ">=8",
-    "laravel/framework": ">=v9"
+    "php" : "^8.0|^8.1|^8.2|^8.3",
+    "illuminate/mail": "^v9|^v10|^v11",
+    "illuminate/contracts": "^v9|^v10|^v11",
+    "illuminate/support": "^v9|^v10|^v11"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.4.7",
+    "laravel/pint": "^v1"
+  },
+  "suggest": {
+    "laravel/framework": "^v9.17|^v10|^v11"
   },
   "autoload": {
     "psr-4": {
@@ -17,5 +26,13 @@
     }
   },
   "extra": {
+  },
+  "scripts": {
+    "pint": "./vendor/laravel/pint/builds/pint",
+    "phpstan": "./vendor/bin/phpstan analyse --memory-limit=2G",
+    "code-quality": [
+      "@pint",
+      "@phpstan"
+    ]
   }
 }

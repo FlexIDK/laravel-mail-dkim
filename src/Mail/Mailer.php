@@ -8,7 +8,6 @@ use Symfony\Component\Mime\Crypto\DkimSigner;
 
 class Mailer extends \Illuminate\Mail\Mailer
 {
-
     public function send($view, array $data = [], $callback = null)
     {
         if ($view instanceof MailableContract) {
@@ -47,7 +46,7 @@ class Mailer extends \Illuminate\Mail\Mailer
 
         // DKIM patch
 
-        if (!!config('mail-dkim.enable')) {
+        if ((bool)config('mail-dkim.enable')) {
             $sign = new DkimSigner(
                 config('mail-dkim.private_key'),
                 config('mail-dkim.domain'),
@@ -79,5 +78,4 @@ class Mailer extends \Illuminate\Mail\Mailer
             }
         }
     }
-
 }

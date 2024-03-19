@@ -1,0 +1,10 @@
+parameters:
+    paths:
+        - src
+#        - tests
+    # Level 9 is the highest level
+    level: 1
+    ignoreErrors:
+        - '#Function config_path not found#'
+        - '#Function config not found#'
+        - '#invalid type Illuminate\\Foundation\\Application#'

@@ -6,7 +6,6 @@ use InvalidArgumentException;
 
 class MailManager extends \Illuminate\Mail\MailManager
 {
-
     protected function resolve($name)
     {
         $config = $this->getConfig($name);
@@ -38,5 +37,4 @@ class MailManager extends \Illuminate\Mail\MailManager
 
         return $mailer;
     }
-
 }
